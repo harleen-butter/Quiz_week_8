@@ -13,7 +13,6 @@ Temperature = [row[2] for row in data]
 
 conn.close()
 
-# Create subplots and plot the data
 plt.subplot(2, 1, 1)
 plt.plot(Year, CO2, 'b--')
 plt.title("Climate Data")
@@ -24,7 +23,7 @@ plt.subplot(2, 1, 2)
 plt.plot(Year, Temperature, 'r*-')
 plt.ylabel("Temp (C)")
 plt.xlabel("Year (decade)")
-
+plt.show()
 plt.savefig("co2_temp_1.png")
 
-plt.show()
+
